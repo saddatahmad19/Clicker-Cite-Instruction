@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Clicker Website</title>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+    <button class="clickBtn" onClick="displayCount()" style="color:white">Click Me</button>
+    <p id="carrier">0</p>
+
+
+    <h1 class="heads">Are you interested in making this?</h1>
+    <h2 class="heads">Lets make this simple counter website in 2 steps!</h2>
+    <p1>Disclaimer: The tutorial does not include how to create the instruction set. It only includes the button and the text that increases along with slight CSS stylings.</p1>
+    <div class="steps">
+        <h3><u>Step 1</u></h3>
+        <p>Download the IDE of your choice. An IDE is an Interactive Developement Enviornment (where you program). 
+            Some of the most popular IDE's are Microsofts Visual Studio Code and Notepad++.</p>
+        <div class="downloads">   
+            <h4>Click to download an IDE:</h4> 
+            <button><a href="https://code.visualstudio.com/download">Visual Studio</a></button>
+            <button><a href="https://notepad-plus-plus.org/downloads/">Notepad++</a></button>
+
+        </div>
+    </div>
+
+    <div class="steps">
+        <h3><u>Step 2</u></h3>
+        <p>Open up your IDE of choice and create a new file. For most applications, you can click File and create a new file.
+            You can name the file whatever you want, but it conventional to name main HTML file index. Regardless of what you name it, it must end with ".html". For example, "index.html".
+        </p>
+        <img src="images/file.png">
+    </div>
+    
+    <div class="steps">
+        <h3><u>Step 3</u></h3>
+        <p>Format your tml file so that you can begin programming your website. Follow the code listed below.
+        </p>
+        <pre>
+            <xmp>
+    
+                <html>
+                    <head>
+                        <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width">
+                        <title>Clicker Website</title>
+                        <link href="styles.css" rel="stylesheet"/>
+                    </head>
+                    <body>
+                    </body>
+                </html>
+            </xmp>
+            
+        </pre>
+        <p>Make sure you save your work by pressing Ctrl + S or by clicking "File" and then "Save".</p>
+    </div>
+
+    <div class="steps">
+        <h3><u>Step 4</u></h3>
+        <p>
+            Inside your body code, insert the following. This is our button and our number. 
+        </p>
+        <pre>
+            <xmp>
+                <button class="clickBtn" onClick="displayCount()">Click Me</button>
+                <p id="carrier">0</p>
+            </xmp>
+            
+        </pre>
+        <p>The "class" attribute is what we use to differentiate our button from other buttons. The onClick refers to the JavaScript funtion we will be implementing later on.</p>
+    </div>
+
+</body>
+
+<script>
+
+    var count = (function() {
+        var counter = 0;
+        return function() {return counter +=1;}
+    })();
+
+
+    function displayCount() {
+        document.getElementById("carrier").innerHTML = count();
+    }
+
+</script>
+
+</html>

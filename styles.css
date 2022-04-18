@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600;700&display=swap');
+
+body {
+    font-family: "Times New Roman";
+}
+
+.clickBtn {
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    border-radius: 10px;
+    height: 80px;
+    width: 160px;
+    margin-left: 45%;
+    font-size: 30px;
+    background-color: black;
+    color:white;
+}
+
+#carrier {
+    text-align: center;
+    font-size: 30px;
+}
+
+body {
+    background: linear-gradient(to bottom right, lightblue, lightgreen)
+}
+
+.downloads{
+    display: inline-block;
+}
+
+.steps {
+    border: 4px solid black;
+    background-color: rgb(185, 186, 187);
+    border-radius: 10px;
+    padding:1%;
+    margin: 1%;
+}
+
+.heads {
+    padding:0.5%;
+}
+
+xmp {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+  }
