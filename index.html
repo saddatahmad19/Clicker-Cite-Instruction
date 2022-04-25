@@ -14,7 +14,7 @@
     <p id="carrier">0</p>
 
 
-    <h1 class="heads">Are you interested in making this?</h1>
+    <h1 class="heads">Are you interested in making a click me button in JavaScript?</h1>
     <h2 class="heads">Lets make this simple counter website in 2 steps!</h2>
     <p1>Disclaimer: The tutorial does not include how to create the instruction set. It only includes the button and the text that increases along with slight CSS stylings.</p1>
     <div class="steps">
@@ -27,6 +27,10 @@
             <button><a href="https://notepad-plus-plus.org/downloads/">Notepad++</a></button>
 
         </div>
+        <p>
+            If you dont want to download an IDE, you can do this project on an online IDE.
+            Repl.it is a free online IDE that lets you work on and save CS projects in a variety of different languages. If you are going with Repl.it, create a new HTML project and follow allong.
+        </p>
     </div>
 
     <div class="steps">
@@ -44,16 +48,18 @@
         <pre>
             <xmp>
     
-                <html>
-                    <head>
-                        <meta charset="utf-8">
-                        <meta name="viewport" content="width=device-width">
-                        <title>Clicker Website</title>
-                        <link href="styles.css" rel="stylesheet"/>
-                    </head>
-                    <body>
-                    </body>
-                </html>
+        <html>
+            <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width">
+                <title>Clicker Website</title>
+                <link href="styles.css" rel="stylesheet"/>
+            </head>
+        
+            <body>
+                <script src="script.js"></script>
+            </body>
+          </html>
             </xmp>
             
         </pre>
@@ -67,28 +73,38 @@
         </p>
         <pre>
             <xmp>
-                <button class="clickBtn" onClick="displayCount()">Click Me</button>
-                <p id="carrier">0</p>
+       
+        <button class="clickBtn" onClick="displayCount()">Click Me</button>
+        <p id="carrier">0</p>
+        
             </xmp>
             
         </pre>
         <p>The "class" attribute is what we use to differentiate our button from other buttons. The onClick refers to the JavaScript funtion we will be implementing later on.</p>
     </div>
 
+    <div class="steps">
+        <h3><u>Step 5</u></h3>
+        <p>
+            Congratulations. You have made the bulk of the website. Press Ctrl + S to save and open up your file. If you are on an IDE, right click the .html file and click "Open in Default Browser"
+        </p>
+        <img src="images/clickme.png" />
+
+        <pre>
+            <xmp>
+        <button class="clickBtn" onClick="displayCount()">Click Me</button>
+        <p id="carrier">0</p>
+            </xmp>
+            
+        </pre>
+        <p>
+            For Relp.it, you can just run the file. Now you will see your website with a button and the number 0. We're almost done. Now all thats left is to make sure our number increases everytime we lick the button.
+        </p>
+    </div>
+
 </body>
 
-<script>
-
-    var count = (function() {
-        var counter = 0;
-        return function() {return counter +=1;}
-    })();
-
-
-    function displayCount() {
-        document.getElementById("carrier").innerHTML = count();
-    }
-
-</script>
+    <script src="script.js">
+    </script>
 
 </html>
