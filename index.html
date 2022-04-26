@@ -25,7 +25,8 @@
             <h4>Click to download an IDE:</h4> 
             <button><a href="https://code.visualstudio.com/download">Visual Studio</a></button>
             <button><a href="https://notepad-plus-plus.org/downloads/">Notepad++</a></button>
-
+           
+            <button><a href="https://replit.com/">Repl.it</a></button>
         </div>
         <p>
             If you dont want to download an IDE, you can do this project on an online IDE.
@@ -59,7 +60,7 @@
             <body>
                 <script src="script.js"></script>
             </body>
-          </html>
+        </html>
             </xmp>
             
         </pre>
@@ -69,7 +70,7 @@
     <div class="steps">
         <h3><u>Step 4</u></h3>
         <p>
-            Inside your body code, insert the following. This is our button and our number. 
+            Inside your body code above the script tag, insert the following,. This is our button and our number. 
         </p>
         <pre>
             <xmp>
@@ -90,18 +91,83 @@
         </p>
         <img src="images/clickme.png" />
 
-        <pre>
-            <xmp>
-        <button class="clickBtn" onClick="displayCount()">Click Me</button>
-        <p id="carrier">0</p>
-            </xmp>
-            
-        </pre>
+        
         <p>
             For Relp.it, you can just run the file. Now you will see your website with a button and the number 0. We're almost done. Now all thats left is to make sure our number increases everytime we lick the button.
         </p>
     </div>
 
+    <div class="steps">
+        <h3><u>Step 6</u></h3>
+        <p>
+            Now you have the actual button counting part. Create a file called "script.js" that you will upload the code to.
+        </p>
+        <pre>
+            <xmp>
+       
+                var count = (function() {
+                    var counter = 0;
+                    return function() {return counter +=1;}
+                })();
+                
+                
+                function displayCount() {
+                    document.getElementById("carrier").innerHTML = count();
+                }
+        
+            </xmp>
+            
+        </pre>
+        <p>What this does is create a function called count that sets the counter to 0, and every time it is called, it increases counter by 1. The displayCount funtion does exactly what its name implies. It displays the count of the </p>
+    </div>
+
+    <div class="steps">
+        <h3><u>Step 7</u></h3>
+        <p>
+            Now its time to make it look nice. This portion is done with css. Create a file called "styles.css" and insert the following.
+        </p>
+        <pre>
+            <xmp>
+       
+                body {
+                    font-family: "Times New Roman";
+                }
+                
+                .clickBtn {
+                    font-family: 'Times New Roman', Times, serif;
+                    align-items: center;
+                    border-radius: 10px;
+                    height: 80px;
+                    width: 160px;
+                    margin-left: 45%;
+                    font-size: 30px;
+                    background-color: black;
+                    color:white;
+                }
+                
+                #carrier {
+                    text-align: center;
+                    font-size: 30px;
+                }
+                
+                body {
+                    background: linear-gradient(to bottom right, lightblue, lightgreen)
+                }
+        
+            </xmp>
+            
+        </pre>
+        <p>Now make sure to save and run.</p>
+    </div>
+
+
+    <div class="steps">
+        <h3><u>Step 8</u></h3>
+        <p>
+            You're done! Congratulations. You build your first HTML website with JavaScript.
+        </p> 
+
+    </div>
 </body>
 
     <script src="script.js">

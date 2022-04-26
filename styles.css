@@ -37,6 +37,10 @@ body {
     margin: 1%;
 }
 
+.steps:nth-child(even) {
+    background-color: rgb(207, 220, 238);
+}
+
 .heads {
     padding:0.5%;
 }
